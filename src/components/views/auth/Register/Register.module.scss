@@ -1,0 +1,57 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  &__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  &__form {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      &__label {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      &__input {
+        padding: 10px;
+        background-color: #eee;
+        margin-top: 5px;
+        border: none;
+        overflow: none;
+      }
+    }
+    &__button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover {
+        background-color: #131212;
+      }
+    }
+  }
+  &__link {
+    color: rgb(4, 33, 49);
+  }
+  &__error {
+    color: rgb(219, 4, 4);
+    margin-bottom: 10px;
+    font-weight: 500;
+    background-color: antiquewhite;
+  }
+}
